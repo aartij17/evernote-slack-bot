@@ -6,7 +6,7 @@ import (
 )
 
 func DailyTicker() {
-	ticker := time.NewTicker(4 * time.Second)
+	ticker := time.NewTicker(24 * time.Hour)
 	for {
 		select {
 		case <-ticker.C:
