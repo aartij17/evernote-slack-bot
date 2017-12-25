@@ -18,6 +18,6 @@ func DailyTicker() {
 func postMessage() {
 	for _, channel := range AllChanData.Channels {
 		params := slack.PostMessageParameters{EscapeText: false}
-		API.PostMessage(channel, "/topic hi", params)
+		API.PostMessage(channel, "/clip today", params)
 	}
 }
